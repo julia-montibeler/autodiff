@@ -1,0 +1,43 @@
+{
+  "seed": 42,
+  "dtype": "float64",
+  "repeticoes": 30,
+  "aquecimentos": 5,
+  "configuracoes": [
+    [
+      8,
+      8,
+      4
+    ],
+    [
+      16,
+      12,
+      6
+    ],
+    [
+      32,
+      16,
+      8
+    ],
+    [
+      64,
+      24,
+      12
+    ]
+  ],
+  "relogio": "time.perf_counter_ns (monotonico, tempo decorrido)",
+  "metrica": "construcao do grafo + backward, sem geracao de dados e sem CSV",
+  "gc": "gc.collect antes, GC desabilitado durante a medicao",
+  "ordem": "alternada (escalar/matricial, matricial/escalar)",
+  "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.4.4",
+  "plataforma": "Windows-11-10.0.26300-SP0",
+  "processador": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "cpu_logicos": 8,
+  "variaveis_threads": {
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null
+  },
+  "precisao": "float64 (entradas e Value matricial; escalar recebe float Python, precisao dupla)"
+}

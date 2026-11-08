@@ -1,0 +1,46 @@
+{
+  "seed": 42,
+  "dtype": "float32",
+  "repeticoes": 30,
+  "aquecimentos": 5,
+  "configuracoes": [
+    [
+      64,
+      24,
+      12
+    ],
+    [
+      256,
+      128,
+      64
+    ],
+    [
+      1000,
+      256,
+      128
+    ],
+    [
+      2000,
+      512,
+      256
+    ]
+  ],
+  "metrica": "tempo de parede sincronizado, forward + backward",
+  "transferencias": "H2D e D2H excluidas da regiao cronometrada",
+  "tempo": "time.perf_counter_ns, stream CUDA sincronizado apos forward e backward",
+  "ordem": "alternada (CPU/GPU e GPU/CPU)",
+  "gc": "gc.collect antes, GC desabilitado no intervalo cronometrado",
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "numpy": "2.4.6",
+  "cupy": "14.0.1",
+  "plataforma": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "cpu": "x86_64",
+  "cpu_logicos": 2,
+  "gpu": "Tesla T4",
+  "cuda_runtime_version": 13000,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null
+  }
+}
